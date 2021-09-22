@@ -1,0 +1,92 @@
+main {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-width: 320px;   
+    max-height: 380px;
+    min-height: 340px;
+    background-color: #ffffff;
+    border-radius: 13px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.followers_likes_photos {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: 35px;
+}
+
+.name_age_location, .bold-center {
+    text-align: center;
+}
+
+.bold-center {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.name_age {
+    display: flex;
+    gap: 8px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.photo {
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.age {
+    color: hsl(0, 0%, 59%);
+}
+
+.dark_gray_text {
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+    font-size: 9px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.city {
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.top {
+    z-index: 1;
+    position: absolute;
+    background-image: url("images/bg-pattern-top.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: 190px;
+    right: 665px;
+    overflow: hidden;
+    transform: rotate(-15deg);
+}
+
+.bottom {
+    z-index: 1;
+    position: absolute;
+    background-image: url("images/bg-pattern-bottom.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 325px;
+    left: 610px;
+    overflow: hidden;
+    transform: rotate(330deg);
+}
