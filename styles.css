@@ -27,15 +27,20 @@ main {
     display: flex;
     justify-content: space-between;
     width: 70%;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .name_age_location, .bold-center {
     text-align: center;
 }
 
+.name_age_location {
+    padding-top: 75px;
+}
+
 .bold-center {
     font-family: 'Kumbh Sans', sans-serif;
+    padding-top: 35px;
 }
 
 .name_age {
@@ -44,9 +49,15 @@ main {
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-.photo {
-    margin-bottom: 10px;
+.photo_1 {
+    height: 96px;
+    width: 96px;
     border-radius: 50%;
+    z-index: 5;
+    transform: translateY(73px);
+    border: 4px solid #ffffff;
+    overflow: hidden;
+    position: absolute;
 }
 
 .age {
